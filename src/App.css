@@ -61,6 +61,11 @@
 
 } 
 
+.cardAlign {
+  display: flex;
+  
+}
+
 .StrongList {
   font-size: 15px;
 }
@@ -72,12 +77,34 @@
 .credit {
   margin: 0px;
   border: 0.2rem solid gray;
+  border-radius: 5px;
   width: 300px;
   height: 200px;
-  font-size: 10px;
+  font-size: 15px;
+  margin-left: 20px;
 	  }
 
 .cardLogo {
   width: 50px;
+  padding-right: 10px;
+  padding-top: 15px;
+  
  
+}
+
+.logoAlign {
+  text-align: right;
+}
+
+.credNum {
+  padding-top: 40px;
+  padding-bottom: 25px;
+  font-size: 20px;
+  font-stretch: expanded;
+}
+
+.credThirdLine {
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 5px;
 }

@@ -31,11 +31,14 @@ function App() {
       <hr />
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
+      <hr />
       <Random min={1} max={6} />
       <Random min={1} max={100} />
+      <hr />
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-
+      <hr />
+      <div className='cardAlign'>
       <CreditCard
   type="Visa"
   number="0123456789018845"
@@ -45,6 +48,7 @@ function App() {
   owner="Maxence Bouret"
   bgColor="#11aa99"
   color="white" />
+
 <CreditCard
   type="Master Card"
   number="0123456789010995"
@@ -54,6 +58,7 @@ function App() {
   owner="Maxence Bouret"
   bgColor="#eeeeee"
   color="#222222" />
+  
 <CreditCard
   type="Visa"
   number="0123456789016984"
@@ -63,13 +68,13 @@ function App() {
   owner="Firstname Lastname"
   bgColor="#ddbb55"
   color="white" />
-      
+      </div>
       <Rating>0</Rating>
-<Rating>1.49</Rating>
-<Rating>1.5</Rating>
-<Rating>3</Rating>
-<Rating>4</Rating>
-<Rating>5</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
     </div>
   );
 }
