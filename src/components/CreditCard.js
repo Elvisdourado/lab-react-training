@@ -23,7 +23,7 @@ const CreditCard = ({ type, number, expirationMonth,
                     Expires {expirationMonth}/                     
      {expirationYear.toString().slice(2)} {bank}
                 </div>
-                <div>
+                <div className='credThirdLine'>
                 {owner}               
                 </div>
 
