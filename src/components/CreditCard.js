@@ -8,18 +8,10 @@ const CreditCard = ({ type, number, expirationMonth,
         let slice = []
         return slice = number.slice(12,)
     }
-
-    function slicerAcc(numero) {
-        let acc = numero.keys
-        return slicerAcc = acc.slice(5,)
-    }
-    
-    
-
-
+     
     return (
-        <div >
-            <div className='credit'>
+        <div>
+            <div className='credit' style={{backgroundColor: bgColor, color: color}}>
                 <div className='logoAlign'>
                     <img className='cardLogo' src='../img/visa.png' alt='Visa Logo' />
                 </div>
@@ -28,12 +20,11 @@ const CreditCard = ({ type, number, expirationMonth,
                 </div>
                 <div className="credThirdLine"> 
                  
-                    Expires {expirationMonth}, 
-                    
-     {expirationYear},{bank}
+                    Expires {expirationMonth}/                     
+     {expirationYear.toString().slice(2)} {bank}
                 </div>
                 <div>
-                    {owner},{bgColor},{color}
+                {owner}               
                 </div>
 
             </div>
